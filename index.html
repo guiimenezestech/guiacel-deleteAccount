@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exclusão de Conta - GuiaCel</title>
+  <style>
+    :root {
+      --primary: #006699;
+      --primary-dark: #004D73;
+      --background: #F8FAFC;
+      --surface: #FFFFFF;
+      --text: #0F172A;
+      --muted: #64748B;
+      --border: #E2E8F0;
+      --danger: #DC2626;
+      --success: #16A34A;
+      --radius: 20px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: #fff;
+      border-radius: 28px;
+      padding: 32px 24px;
+      box-shadow: 0 18px 50px rgba(0, 77, 115, 0.18);
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: 34px;
+      line-height: 1.15;
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: 16px;
+      color: rgba(255,255,255,0.92);
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+      margin-top: 18px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .steps {
+      display: grid;
+      gap: 12px;
+    }
+
+    .step {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px 16px;
+      background: #FCFDFE;
+    }
+
+    .step strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .contact-box {
+      background: #EFF6FF;
+      border: 1px solid #BFDBFE;
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .email {
+      display: inline-block;
+      margin-top: 8px;
+      color: var(--primary-dark);
+      font-weight: 700;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .warning {
+      border-left: 4px solid var(--danger);
+      padding-left: 12px;
+      color: var(--muted);
+    }
+
+    .footer {
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      .hero,
+      .card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Exclusão de Conta e Dados</h1>
+      <p>
+        Nesta página, você pode solicitar a exclusão da sua conta do GuiaCel e dos dados associados.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Como solicitar</h2>
+      <div class="steps">
+        <div class="step">
+          <strong>1. Envie sua solicitação</strong>
+          Informe o e-mail da conta cadastrada no GuiaCel e, se possível, seu nome de usuário.
+        </div>
+        <div class="step">
+          <strong>2. Confirmação de identidade</strong>
+          Podemos solicitar uma confirmação simples para garantir a segurança da exclusão.
+        </div>
+        <div class="step">
+          <strong>3. Processamento</strong>
+          Após a confirmação, sua conta e os dados vinculados serão removidos conforme nossa política.
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Solicitar exclusão</h2>
+      <div class="contact-box">
+        <p>
+          Para solicitar a exclusão da sua conta, envie um e-mail com o assunto <strong>"Excluir conta GuiaCel"</strong> para:
+        </p>
+        <a class="email" href="mailto:SEUEMAILAQUI@dominio.com?subject=Excluir%20conta%20GuiaCel">
+          SEUEMAILAQUI@dominio.com
+        </a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Quais dados são excluídos</h2>
+      <ul>
+        <li>Dados de perfil da conta.</li>
+        <li>Informações de contato associadas ao usuário.</li>
+        <li>Dados pessoais armazenados para uso do aplicativo.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Quais dados podem permanecer por um período</h2>
+      <p class="warning">
+        Algumas informações podem ser mantidas temporariamente quando houver necessidade legal, prevenção a fraudes, segurança, auditoria ou cumprimento de obrigações regulatórias.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Excluir pelo aplicativo</h2>
+      <p>
+        Você também pode solicitar a exclusão da conta dentro do próprio aplicativo, na área de perfil, usando a opção <strong>"Excluir conta"</strong>.
+      </p>
+    </section>
+
+    <p class="footer">
+      GuiaCel • Página de exclusão de conta
+    </p>
+  </main>
+</body>
+</html>
